@@ -1,0 +1,5 @@
+Laboratorio JavaScript y AJAX.
+
+Prueba exitosa de XMLHttpRequest.
+
+Universidad.
