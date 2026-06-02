@@ -1,0 +1,227 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* PALETA */
+
+:root{
+    --primario:#4361ee;
+    --secundario:#7209b7;
+    --fondo:#f8f9ff;
+    --texto:#2b2d42;
+    --blanco:#ffffff;
+    --borde:#dce1f5;
+    --sombra:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* BODY */
+
+body{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8f9ff
+    );
+
+    color:var(--texto);
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.container{
+
+    width:100%;
+    max-width:1200px;
+
+    display:grid;
+
+    gap:25px;
+}
+
+/* TITULO */
+
+h1{
+
+    text-align:center;
+
+    color:var(--secundario);
+
+    font-size:2.3rem;
+
+    margin-bottom:10px;
+}
+
+/* SECCIONES */
+
+section{
+
+    background:var(--blanco);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:var(--sombra);
+
+    border:1px solid var(--borde);
+
+}
+
+/* SUBTITULOS */
+
+h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:var(--primario);
+}
+
+h3{
+
+    margin:15px 0 10px;
+}
+
+/* GRID BOTONES JS */
+
+.botones-js{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+}
+
+/* BOTONES */
+
+button{
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primario),
+        var(--secundario)
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 20px rgba(67,97,238,.3);
+}
+
+/* AJAX */
+
+.ajax-grid{
+
+    display:grid;
+
+    gap:20px;
+}
+
+/* INPUT */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid var(--borde);
+
+    outline:none;
+
+    font-size:1rem;
+}
+
+input:focus{
+
+    border-color:var(--primario);
+
+    box-shadow:
+    0 0 0 3px rgba(67,97,238,.15);
+}
+
+/* AREAS RESULTADO */
+
+#estados,
+#cabeceras,
+#codigo,
+#contenidos{
+
+    background:#fafbff;
+
+    border:1px solid var(--borde);
+
+    border-radius:12px;
+
+    min-height:80px;
+
+    padding:15px;
+
+    overflow:auto;
+
+    white-space:pre-wrap;
+}
+
+/* CODIGO HTTP */
+
+#codigo{
+
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    button{
+        width:100%;
+    }
+
+}

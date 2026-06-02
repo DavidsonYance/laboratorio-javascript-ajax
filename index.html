@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio JavaScript y AJAX</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1>Laboratorio JavaScript y AJAX</h1>
+
+    <section>
+
+    <h2>Ejercicios JavaScript</h2>
+
+    <div class="botones-js">
+
+        <button onclick="ejercicio1()">
+            1. Verificar Palíndromo
+        </button>
+
+        <button onclick="ejercicio2()">
+            2. Número Mayor
+        </button>
+
+        <button onclick="ejercicio3()">
+            3. Mostrar Vocales
+        </button>
+
+        <button onclick="ejercicio4()">
+            4. Contar Vocales
+        </button>
+
+    </div>
+
+    </section>
+
+    <hr>
+
+    <section class="ajax-grid">
+        <h2>AJAX</h2>
+
+        <label>URL:</label>
+
+        <input
+            type="text"
+            id="recurso"
+            size="80">
+
+        <button id="enviar">
+            Mostrar Contenidos
+        </button>
+
+        <h3>Estado de la petición</h3>
+        <div id="estados"></div>
+
+        <h3>Cabeceras HTTP</h3>
+        <div id="cabeceras"></div>
+
+        <h3>Código de estado</h3>
+        <div id="codigo"></div>
+
+        <h3>Contenido</h3>
+        <div id="contenidos"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+    </div>
+
+</body>
+</html>
